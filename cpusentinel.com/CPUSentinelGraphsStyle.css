@@ -1,0 +1,316 @@
+
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+height: 3.5%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.navbar a.active {
+  background-color: #00C9FF;
+  color: white;
+  
+}
+
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.flex-fill {
+   flex:1
+}
+
+.home a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 110px;
+}
+    
+
+
+
+.copyright {
+    float: left;
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.background span:nth-child(1) {
+  color: blue;
+  top: 23%;
+  left: 61%;
+  animation-duration: 13.9s;
+  animation-delay: -6.3s;
+  transform-origin: -21vw 7vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: red;
+  top: 69%;
+  left: 42%;
+  animation-duration: 11.1s;
+  animation-delay: -12.9s;
+  transform-origin: -10vw -11vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #00FFEC;
+  top: 62%;
+  left: 18%;
+  animation-duration: 10.7s;
+  animation-delay: -2.4s;
+  transform-origin: 0vw -8vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #E4FF00;
+  top: 59%;
+  left: 12%;
+  animation-duration: 10.4s;
+  animation-delay: -0.1s;
+  transform-origin: 24vw 21vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #F0FB8E;
+  top: 50%;
+  left: 21%;
+  animation-duration: 12.1s;
+  animation-delay: -5.4s;
+  transform-origin: 25vw 16vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #78C5D3;
+  top: 12%;
+  left: 45%;
+  animation-duration: 13.6s;
+  animation-delay: -14.1s;
+  transform-origin: 3vw -3vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #909FA2;
+  top: 54%;
+  left: 39%;
+  animation-duration: 14s;
+  animation-delay: -2.1s;
+  transform-origin: 19vw -4vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #AAE887;
+  top: 93%;
+  left: 31%;
+  animation-duration: 13s;
+  animation-delay: -0.3s;
+  transform-origin: 0vw -15vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #92A886;
+  top: 96%;
+  left: 1%;
+  animation-duration: 10.4s;
+  animation-delay: -2.4s;
+  transform-origin: -16vw -4vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #F1A5FA;
+  top: 70%;
+  left: 48%;
+  animation-duration: 12s;
+  animation-delay: -10s;
+  transform-origin: 16vw 21vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #F79292;
+  top: 51%;
+  left: 69%;
+  animation-duration: 15.2s;
+  animation-delay: -7.6s;
+  transform-origin: 4vw -8vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #F9DC23;
+  top: 55%;
+  left: 2%;
+  animation-duration: 11.7s;
+  animation-delay: -11.6s;
+  transform-origin: 9vw -16vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #B3ECAC;
+  top: 79%;
+  left: 22%;
+  animation-duration: 14.9s;
+  animation-delay: -3.2s;
+  transform-origin: 6vw -13vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: #F79F87;
+  top: 92%;
+  left: 31%;
+  animation-duration: 12.8s;
+  animation-delay: -14.8s;
+  transform-origin: 18vw 11vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(15) {
+  color: #C2B271;
+  top: 14%;
+  left: 57%;
+  animation-duration: 12.6s;
+  animation-delay: -11.3s;
+  transform-origin: -24vw 2vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(16) {
+  color: #7AA1A0;
+  top: 38%;
+  left: 29%;
+  animation-duration: 13.3s;
+  animation-delay: -4.7s;
+  transform-origin: -3vw -18vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(17) {
+  color: #92D5D3;
+  top: 50%;
+  left: 47%;
+  animation-duration: 11.1s;
+  animation-delay: -12.7s;
+  transform-origin: -20vw -23vh;
+  box-shadow: -40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(18) {
+  color: #21FCF8;
+  top: 99%;
+  left: 69%;
+  animation-duration: 15.6s;
+  animation-delay: -8.9s;
+  transform-origin: 16vw 21vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(19) {
+  color: #21CAFC;
+  top: 88%;
+  left: 65%;
+  animation-duration: 12.6s;
+  animation-delay: -13.2s;
+  transform-origin: -19vw -13vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+.background span:nth-child(20) {
+  color: #87C3D5;
+  top: 43%;
+  left: 18%;
+  animation-duration: 11.7s;
+  animation-delay: -12.9s;
+  transform-origin: -13vw -15vh;
+  box-shadow: 40vmin 0 20vmin currentColor;
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+
+
+.navbar_right input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #00C9FF;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.navbar_right input[type="text"] {
+    border: none;
+    outline: none;
+    /*color: #00C9FF;*/
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.navbar_right input[type="button"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #FF0027;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+tr.detail {
+  display: none;
+  width: 100%;
+    
+    
+}
+tr.detail div {
+  display: none;
+}
+.showmore:hover {
+  cursor: pointer;
+}
+
+A {text-decoration: none;}

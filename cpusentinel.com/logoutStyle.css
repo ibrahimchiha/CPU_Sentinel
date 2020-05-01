@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+.logout {
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    /*font: Impact, fantasy;*/
+    font: 50px Arial,Impact, sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+}

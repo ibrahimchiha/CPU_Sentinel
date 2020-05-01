@@ -1,0 +1,206 @@
+<style>
+body  {
+  margin:0;
+  background-image: url("wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+height: 3.5%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.navbar a.active {
+  background-color: #00C9FF;
+  color: white;
+  
+}
+
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.flex-fill {
+   flex:1
+}
+
+
+
+
+
+.navbar_right input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #00C9FF;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.navbar_right input[type="text"] {
+    border: none;
+    outline: none;
+    /*color: #00C9FF;*/
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.navbar_right input[type="button"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #FF0027;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.buttons {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: auto;
+    background: #7CFF00;
+    margin:auto;
+    /*color: #fff;*/
+    font-size: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+
+</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+<!--  Use flexbox utility classes to change how the child elements are justified  -->
+  <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="CPUSentinelHome.php">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Graph</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">History</a> <span class="sr-only">(current)</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Search </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link active" href="contactUs.html">Contact Us </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    
+    
+<!--   Show this only lg screens and up   -->
+<div class="home">
+    <a href="CPUSentinelHome.php">CPU Sentinel</a>
+    </div>
+
+    <div class="navbar_right">
+        <form method="post" action='CPUSentinelSearch.php'>
+            <input type="button" class="button" value='Logout' onclick="location.href='logout.php';" />
+            <input id="searchBox" name="name" type="text" placeholder="Search by name">
+            <input type="submit" name="searchname" value="Search">
+        </form>
+    </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<div class="loginbox">
+    
+    <h1> Contact Us </h1>
+    <link rel="stylesheet" type="text/css" href="contactUsStyle.css">
+<form action="https://postmail.invotes.com/send"
+    method="post" id="email_form">
+<img src="logo.png" class="avatar">
+    
+    <input type="text" name="subject" placeholder="Subject" />
+    <textarea name="text" placeholder="Message"></textarea>
+    <input type="hidden" name="access_token" value="wzmt6o4psucp4af1ymyvm9ro" />
+      <!-- return urls can be fully qualified -OR-
+         start with / for root relative -OR-
+         start with . for url relative --> 
+    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+   
+
+    <!-- set the reply-to address -->
+    <!-- <input type="text" name="reply_to"
+                placeholder="Your Email" /> -->
+
+    <!-- to append extra fields, use the extra_ prefix.
+        Entries will be appended to your message body. -->
+    <!-- <input type="text" name="extra_phone_number"
+                placeholder="Phone Number" /> -->
+
+    <!-- to split your message into 160 chars
+         for an sms gateway -->
+    <!-- <input type="hidden"
+                name="sms_format" value="true" /> -->
+   <br>
+   <br>
+   <br>
+   
+    <input id="submit_form" type="submit" value="Send" />
+    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+   
+</form>
+</div>
+<!-- optional, prevents the submit button from being pressed more than once -->
+<script>
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+</script> 
